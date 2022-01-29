@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="data"
+            type="pontinisystems.dog.domain.entities.Dog" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/grey_700">
+
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/dog_poster"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/dogName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:text="@{data.breedName}"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"
+            app:layout_constraintStart_toStartOf="@id/poster"
+            app:layout_constraintTop_toBottomOf="@id/poster"
+            tools:text="dog Name" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

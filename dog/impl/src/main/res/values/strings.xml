@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">TMDB</string>
+    <string name="dogs">dogs</string>
+    <string name="dog_poster">dog Poster</string>
+    <string name="overview">Overview:</string>
+    <string name="tagLine">Tagline:</string>
+    <string name="status">Status</string>
+    <string name="title_activity_dog">dog</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="popular">Popular</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="tv_show">TV Show</string>
+    <string name="dog_Detail">dog Details</string>
+    <string name="tv_show_poster">Tv Show Poster</string>
+    <string name="on_the_air">On TV</string>
+    <string name="airing_today">Airing Today</string>
+    <string name="first_air_date">First Air Date</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="breed_for">Breed For</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="new_feature">New Feature</string>
+    <string name="breed_name">Breed</string>
+    <string name="temperament">Temperament</string>
+    <string name="life_span">Life Span</string>
+</resources>
