@@ -6,7 +6,7 @@ import org.koin.core.context.startKoin
 import pontinisystems.dog.di.dogModuleDependency
 import pontinisystems.network.di.retrofitModule
 
-class TmdbControlApp : Application() {
+class DogSearchApp : Application() {
     override fun onCreate() {
         super.onCreate()
         initKoin()
@@ -14,7 +14,7 @@ class TmdbControlApp : Application() {
 
     private fun initKoin() {
         startKoin {
-            androidContext(this@TmdbControlApp)
+            androidContext(this@DogSearchApp)
             modules(provideModules())
         }
     }
