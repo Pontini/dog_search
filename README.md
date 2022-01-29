@@ -1,4 +1,4 @@
-# tmdb_control
+# Dog Search
 
 * Clean Architecture
 * Design Pattern MVI
