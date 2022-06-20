@@ -1,4 +1,3 @@
-
 plugins {
     id("com.android.application")
     kotlin("android")
@@ -34,7 +33,7 @@ android {
 
         getByName("release") {
             isMinifyEnabled = true
-            proguardFiles (
+            proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
@@ -64,26 +63,22 @@ android {
 }
 
 dependencies {
-
-    implementation(project(mapOf("path" to ":dog:impl")))
+    implementation(project(mapOf("path" to ":dog:data")))
+    implementation(project(mapOf("path" to ":dog:presentation")))
+    implementation(project(mapOf("path" to ":dog:domain")))
     implementation(project(mapOf("path" to ":network")))
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:${rootProject.extra["kotlin_version"]}")
-
+    implementation(project(mapOf("path" to ":core")))
     implementation(Lib.AndroidX.ConstraintLayout.constraintLayout)
     implementation(Lib.AndroidX.AppCompat.appcompat)
     implementation(Lib.AndroidX.Lifecycle.livedata)
     implementation(Lib.AndroidX.Lifecycle.viewmodel)
     implementation(Lib.AndroidX.Navigation.fragment)
     implementation(Lib.AndroidX.Navigation.ui)
-
     implementation(Lib.Material.material)
-
     implementation(Lib.Kotlin.stdlib)
-
     implementation(Lib.Koin.koinCore)
     implementation(Lib.Koin.koinTest)
     implementation(Lib.Koin.koinAndroid)
-
     implementation(Lib.LottieAnimation.lottie)
-
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:${rootProject.extra["kotlin_version"]}")
 }

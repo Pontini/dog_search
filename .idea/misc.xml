@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="dog/presentation/src/main/res/layout/activity_dog_details.xml" value="0.20923913043478262" />
+        <entry key="dog/presentation/src/main/res/layout/dog_item_holder.xml" value="0.253125" />
+        <entry key="dog/presentation/src/main/res/layout/dog_search_fragment.xml" value="0.12708333333333333" />
+        <entry key="dog/presentation/src/main/res/menu/search_menu.xml" value="0.2609375" />
+      </map>
+    </option>
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>

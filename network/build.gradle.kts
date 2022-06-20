@@ -10,8 +10,6 @@ java {
 }
 
 dependencies {
-    implementation ("org.jetbrains.kotlin:kotlin-stdlib:${Lib.Kotlin.version}")
-
     implementation(Lib.Retrofit.retrofit2)
     implementation(Lib.Gson.scalarsGson)
     implementation(Lib.Gson.converterGson)
@@ -21,9 +19,5 @@ dependencies {
     implementation(Lib.Okhttp.okhttpInterceptor)
     implementation(Lib.Koin.koinCore)
     testImplementation(Lib.Koin.koinTest)
-
-
-
-
-
+    implementation ("org.jetbrains.kotlin:kotlin-stdlib:${Lib.Kotlin.version}")
 }

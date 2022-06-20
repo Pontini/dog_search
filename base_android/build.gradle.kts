@@ -64,6 +64,5 @@ dependencies {
     implementation(Lib.AndroidX.Navigation.fragment)
     implementation(Lib.AndroidX.Navigation.ui)
     implementation(Lib.AndroidX.ConstraintLayout.constraintLayout)
-
     implementation(Lib.LottieAnimation.lottie)
 }

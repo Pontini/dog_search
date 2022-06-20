@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit
 import retrofit2.converter.scalars.ScalarsConverterFactory
 
 
-val retrofitModule = module {
+val networkModule = module {
 
     factory { provideGson() }
     factory { provideOkHttpClient() }

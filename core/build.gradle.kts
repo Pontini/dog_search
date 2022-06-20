@@ -10,14 +10,8 @@ java {
 }
 
 dependencies {
-    implementation ("org.jetbrains.kotlin:kotlin-stdlib:${Lib.Kotlin.version}")
-
-
     implementation(Lib.Koin.koinCore)
     testImplementation(Lib.Koin.koinTest)
     implementation(Lib.Kotlin.coroutines)
-
-
-
-
+    implementation ("org.jetbrains.kotlin:kotlin-stdlib:${Lib.Kotlin.version}")
 }

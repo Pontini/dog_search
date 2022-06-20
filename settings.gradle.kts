@@ -1,7 +1,8 @@
 include(
     ":app",
-    ":dog:impl",
-    ":dog:publ",
+    ":dog:data",
+    ":dog:presentation",
+    ":dog:domain",
     ":core",
     ":base_android",
     ":network"

@@ -8,9 +8,10 @@ import retrofit2.HttpException
 import java.io.IOException
 
 abstract class BaseDataSource {
-    companion object{
+    companion object {
         const val RETRY_DEFAULT = 0
     }
+
     suspend fun <T> safeApiCall(
         dispatcher: CoroutineDispatcher = Dispatchers.IO,
         apiCall: suspend () -> T,
@@ -21,7 +22,7 @@ abstract class BaseDataSource {
                 val myObject = withContext(Dispatchers.IO) { apiCall.invoke() }
                 myObject
             } catch (throwable: Exception) {
-                println(throwable.message)
+                logg(throwable.message)
                 if (retry <= 0) throw handleError(throwable) else {
                     safeApiCall(apiCall = apiCall, retry = (retry - 1))
                 }
@@ -40,7 +41,7 @@ abstract class BaseDataSource {
             throw CustomException.ResponseBodyError(errorResponse)
         }
         else -> {
-           throw  CustomException.Unknown(throwable)
+            throw  CustomException.Unknown(throwable)
         }
     }
 
@@ -54,5 +55,13 @@ abstract class BaseDataSource {
             return null
         }
         return null
+    }
+
+    private fun logg(log: String?) {
+        if(log!=null){
+            println(log)
+        }else{
+            println("Nao foi possível mostrar o log")
+        }
     }
 }
